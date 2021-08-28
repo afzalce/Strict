@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+/* header css */
+.navbar-light .navbar-nav .nav-link {
+    color: #2d3950;
+    font-weight: 400;
+    font-size: 16px;
+}
+header{
+    background-color: #f6f9f9;
+}
+header ul li{
+    text-transform: uppercase;
+}
+
+/* banner section css */
+.banner_section{
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* top: 80%; */
+    /* left: 50%; */
+}
+.banner_section h1{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90px;
+}
+.banner_section span{
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #15a4fa;
+}
+.banner_section p{
+    margin: 0;
+    color: #fff;
+    margin: 30px 0;
+}
+.btn-action{
+    color: #fff;
+    background: transparent;
+    padding: 0;
+    padding: 10px 30px;
+    border: 1px solid #15a4fa;
+    transition: .4s all ease-in-out;
+}
+.hg{
+    min-height: 90vh;
+}
+.btn-action:hover{
+    border: 1px solid #15a4fa;
+    background-color: #15a4fa;
+    color: #fff;
+}
+.icon{    
+    color: #fff;    
+    font-size: 20px;    
+    position: absolute;    
+    top: 80%;    
+    left: 50%;    
+    transform: translateX(-50%);
+    animation: updown 1s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes updown{
+    0%{
+        top: 80%;
+    }
+    100%{
+        top: 90%;
+    }
+}
+
+/* design  */
+.design{
+    background: #f6f9f9;
+    padding: 100px 0;
+}
+.design h1{   
+}
+.design p{   
+    padding: 30px 0;
+}
+
+/* feature css  */
+.feature{
+}
+.feature h2{   
+}
+.feature p{    
+}
+.icon_box{
+    height: 80px;
+    width: 80px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5fc3ff+0,48baff+50,5fc3ff+50,48baff+100 */
+    background: #5fc3ff; /* Old browsers */
+    background: -moz-linear-gradient(left,  #5fc3ff 0%, #48baff 50%, #5fc3ff 50%, #48baff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #5fc3ff 0%,#48baff 50%,#5fc3ff 50%,#48baff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #5fc3ff 0%,#48baff 50%,#5fc3ff 50%,#48baff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5fc3ff', endColorstr='#48baff',GradientType=1 ); /* IE6-9 */
+
+    margin: auto;
+    font-size: 40px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.icon_box i{    
+}
+
+/* work css  */
+.work{
+    position: relative;
+}
+.work::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 0%;
+    background-color: #15a4fa;
+    /* opacity: 0; */
+    opacity: .7;
+    transition: .4s all ease-in-out;
+}
+.work:hover::before{
+    /* opacity: .5; */
+    width: 100%;
+    height: 100%;
+}
+.icon_list{
+    position: absolute;
+    /* top: 70%; */
+    /* top: 50%; */
+    top: 0%;
+    /* left: 50%; */
+    left: 0%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .7s all ease-in-out;
+}
+.icon_list ul{   
+    list-style: none;   
+    width: 90px;    
+    padding: 0;   
+    margin: 0;   
+    display: flex;   
+    justify-content: space-between;
+}
+.icon_list ul li{   
+    height: 40px;    
+    width: 40px;    
+    border: 1px solid #fff;    
+    text-align: center;    
+    line-height: 40px;    
+    /* margin-left: 10px; */    
+    color: #fff;   
+    border-radius: 5px;
+}
+.icon_list ul li i{
+    
+}
+.work:hover .icon_list{
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+}
+.work img{
+    width: 100%;
+}
+.showcase{
+    background: #f6f9f9;
+}
+
+/* stay css  */
+.form-control:focus{
+    box-shadow: none;
+    border-color: #000;
+}
+form input[type="submit"]{    
+    background: transparent;    
+    border: none;    
+    border: 1px solid #56bfff;    
+    padding: 5px 20px;    
+    border-radius: 3px;
+    transition: .4s all ease-in-out;
+}
+form{
+    text-align: end;
+}
+form input[type="submit"]:hover{
+    border: 1px solid #56bfff;
+    background-color: #56bfff;
+    color: #fff;
+}
+.stay{
+    background-image: url(../images/footer_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 80vh;
+}
+.stay::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2d3950;
+    opacity: .7;
+}
+.stay_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.form-control{
+    background: transparent;
+}
+
+/* footer css  */
+footer h6{
+    line-height: 40px;
+}
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+footer ul li{
+    height: 40px;
+    width: 40px;
+    border: 1px solid #15a4fa;
+    text-align: center;
+    line-height: 40px;
+    background: #15a4fa;
+    color: #fff;
+    transition: .7s all ease-in-out;
+}
+footer ul li i{   
+}
+footer ul li:hover{
+    border: 1px solid #3b5998;
+    background: #3b5998;
+}
